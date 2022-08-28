@@ -83,7 +83,7 @@ export const BalanceInfo = ({ getControlBalance }) => {
            setShow(true);
            setTimeout(function (){
                 getControlBalance(payment);
-           }, 2000); 
+           }, 5000); 
        }
        
        return (
@@ -128,7 +128,7 @@ export const SubscriberBalanceBeforePayment = ({ getSubscriberBalanceBeforePayme
 
         setTimeout(function (){
             getSubscriberBalanceBeforePayment(balanceVal);
-        }, 2000); 
+        }, 5000); 
       
     }
     
@@ -167,7 +167,7 @@ export const SubscriberBalanceAfterPayment = ({ getSubscriberBalanceAfterPayment
         
         setTimeout(function () {
             getSubscriberBalanceAfterPayment(balanceVal);
-        }, 2000); // How long do you want the delay to be (in milliseconds)? 
+        }, 5000); // How long do you want the delay to be (in milliseconds)? 
     }
 
     return (
@@ -209,7 +209,7 @@ export const SubscriberLastBalanceScreen = ({ getSubscriberLastBalance, cardInfo
 
         setTimeout(function (){
             getSubscriberLastBalance(balanceVal);
-        }, 2000); 
+        }, 5000); 
     }
 
     return (
@@ -248,7 +248,7 @@ export const CompanyLastBalanceScreen = ({ getInsuranceCompanyBalance, cardInfoT
 
         setTimeout(function (){
             getInsuranceCompanyBalance(balanceVal);
-        }, 2000);  
+        }, 5000);  
     }
 
     return (
@@ -371,7 +371,7 @@ export const UserRequestScreen = ({ getUserRequest }) => {
         setShow(true);
         setTimeout(function (){
             getUserRequest(requestedObj);
-        }, 2000); 
+        }, 5000); 
     }
     
     return (
@@ -422,7 +422,7 @@ export const ApproveUserRequestScreen = ({ approveRequest, approveRequestArgs}) 
 
         setTimeout(function (){
             approveRequest(isApproved);
-        }, 4000);  
+        }, 5000);  
     }
 
     if(!approveRequestArgs.isRequested) {

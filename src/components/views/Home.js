@@ -15,7 +15,6 @@ const Home = () => {
     return account !== "" ? (
         <Container className="h-100">
             <div className="mt-5">
-
             <Row>
                     <Col>
                         <Card className="p-3">
@@ -25,7 +24,6 @@ const Home = () => {
                             <Balance />
                             </Card.Text>
                             <FaucetButton />
-
                         </Card>
                     </Col>
                 </Row>

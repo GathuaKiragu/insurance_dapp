@@ -34,6 +34,8 @@ class Subscriber extends Component {
         const [, , , , , , ctc, , , , , ] = this.context;
         this.interval = setInterval(async () => this.updateBalance(), 20000);
 
+        console.log("UIPDASDASDASD", ctc)
+
         Backend.Subscriber(ctc[0], this);
     }
 
